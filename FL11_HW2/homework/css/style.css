@@ -1,0 +1,237 @@
+@media print {
+  .tm-sidebar, .tm-team-img, #about, .box-work, .img-fluid, #contact {
+    display: none;
+  }
+
+  .tm-team-description-container {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    width: 1000px;
+    font-size: 13px;
+    text-align: center;
+    line-height: 1.5;
+  } 
+
+  .padding-medium {
+    display:block;
+    line-height: 1.5;
+    margin-left: 100px;
+    margin-right: 100px;
+    color: #101111;
+  }
+
+  .padding-medium>h2 {
+    text-align: center;
+    color: lightskyblue;
+  }
+
+  .padding-medium>ol>li:nth-last-child(odd) {
+    font-size: 13px;
+    color: #101111;
+    list-style-type: none;
+    text-align: left;
+  }
+
+  .padding-medium>ol>li:nth-last-child(even) {
+    font-size: 13px;
+    color: #101111;
+    list-style-type: none;
+    text-align: right;
+  }
+
+  .padding-medium>ol>li::first-letter {
+    color: lightskyblue; 
+    font-size: 18px;
+  }
+
+  p.carousel-description {
+    font-size: 12px;
+  }
+}
+
+@media screen {
+  #about ul li, #about ul li.box-bg h2 {
+    transition-duration : 0.5s;
+  }
+
+  #about ul li.box-bg:hover {
+    cursor : pointer;
+    background-color : lightskyblue;
+  }
+
+  #about ul li.box-bg h2:hover {
+    color : white;
+    font-weight : bold;
+  }
+
+  .tm-sidebar {
+    box-shadow: 0 0 10px rgba(61, 55, 61, 0.7);
+  }
+
+  .tm-banner {
+    padding: 0;
+    border : #76cdd7 solid 30px;
+  }
+
+  .tm-banner-text {
+  text-shadow: 0px 5px 2px #76cdd7, 0px 10px 2px #76cdd7;
+  word-spacing: 10px;
+  letter-spacing: 3px;
+  animation: rotation 2s 2 alternate ease-in-out;
+  animation-delay: 1s;
+  filter: drop-shadow(30px 30px 10px rgba(0, 0, 0, 0.2))
+  }
+
+  section {
+    position : relative;
+  }
+
+  section::after {
+    left : 0;
+    top : 0;
+    position : absolute;
+    content : '';
+    width : 0;
+    height : 0;
+    border-top : 30px solid lightskyblue;
+    border-right : 30px solid transparent;
+  }
+
+  .tm-content-box.flex-2-col:first-child {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .padding-medium ol {
+    list-style-type: lower-roman;
+  }
+
+  .padding-medium a:visited {
+    text-decoration-color: #ffb347;
+  }
+
+  .padding-medium a:hover {
+    text-decoration: none;
+    color: #ffb347;
+    padding-left: 2px;
+    border-left: 2px solid #ffb347;
+    font-weight: bold;
+  }
+
+  .padding-medium a {
+    color: black;
+  }
+
+  .padding-medium h2 {
+    color: lightskyblue;
+    text-align: center;
+  }
+
+  .padding-medium .text:after{
+    display: inline-block;
+    position: absolute;
+    font-size: 10px;
+    font-weight: bold;
+    font-variant: small-caps;
+    color: red;
+    position: absolute;
+    content: "New";
+  }
+
+  .tm-content-box {
+    box-shadow : 0 0 7px rgb(0 0 0 / 0.9);
+  }
+
+  .tm-sidebar {
+    box-shadow : 0 0 7px rgb(0 0 0 / 0.9);
+  }
+
+  .submit-btn {
+    background : #fff;
+    color : lightskyblue;
+    border : lightskyblue solid 1px;
+    float : right;
+    border-radius : 0;
+  }
+
+  .submit-btn:hover {
+    color : #fff;
+    background-color : lightskyblue;
+    border-color : transparent;
+  }
+
+  .tm-nav-item:hover {
+    background : lightgrey;
+  }
+
+  h2 + p {
+    font-style : italic;
+  }
+
+  .blocks .gallery-container .box:nth-child(even) {
+    background-color : #eee;
+  }
+
+  .blocks .boxes.gallery-container .box p {
+    line-height : 1.6em;
+    color : black;
+    text-indent : initial;
+  }
+
+  .blocks .boxes.gallery-container .box p::first-letter {
+    color : black;
+    font-size: 25px;
+  }
+
+  .box.box-work {
+    padding : 10px;
+  }
+
+  #contact h2{
+    text-align: left;
+    text-transform: inherit;
+  }
+
+  #contact input{
+    border: none;
+    border-bottom: 2px solid lightskyblue;
+    border-radius: 5px;
+  }
+
+  #contact input:focus{
+    background-color: lightskyblue;
+  }
+
+  .form-group textarea{
+    border: 2px solid lightskyblue;
+    border-radius: 5px;
+    resize: none;
+  }
+
+  .tm-content-box .mandatory-field::after {
+    content: "";
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    margin-top: 3px;
+    right: 1px;
+    background-image: url(../img/email-icon.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+}
+
+@keyframes rotation {
+	from {
+	    transform: scaleX(1) 
+  	}
+  	to {
+	    transform: scaleX(-1)
+  	}
+}
