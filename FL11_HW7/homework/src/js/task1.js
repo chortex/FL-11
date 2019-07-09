@@ -3,7 +3,7 @@ let length1 = 6;
 let length2 = 5;
 
 if (login === '' || !login) {
-  alert('Canceled')
+  alert('Canceled');
 } else {
   if (login.length < length1) {
     alert("I don't know any emails having name length less than 6 symbols");
@@ -29,7 +29,7 @@ if (login === '' || !login) {
           alert('Login or password is wrong');
         }
       } else {
-        alert('You have failed the change.')
+        alert('You have failed the change.');
       }
     } else if (login === 'admin@gmail.com' && password === 'AdminPass') {
       alert('Hello Admin!');
@@ -51,12 +51,12 @@ if (login === '' || !login) {
           alert('Login or password is wrong');
         }
       } else {
-        alert('You have failed the change.')
+        alert('You have failed the change.');
       }
     } else {
       alert('Wrong Password');
     }
   } else {
-    alert('I dont know you')
+    alert('I dont know you');
   }
 }
